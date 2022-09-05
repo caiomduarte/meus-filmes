@@ -14,7 +14,9 @@ export default function Home(){
             <Text>Meus Filmes</Text>
             <Text>Olá Caio, boa noite!</Text>
 
-            
+            <TouchableOpacity>
+                <Text>Adicionar</Text>
+            </TouchableOpacity>
         </View>
     );
 }
