@@ -10,12 +10,17 @@ import {
 
 export default function Home(){
     return(
-        <View>
-            <Text>Meus Filmes</Text>
-            <Text>Olá Caio, boa noite!</Text>
+        <View style={styles.container}>
+            <Text style={styles.titulo}>Meus Filmes</Text>
+            <Text style={styles.Subtitulo}>Olá Caio, boa noite!</Text>
 
-            <TouchableOpacity>
-                <Text>Adicionar</Text>
+            <TextInput 
+                style={styles.campo}
+                placeholder="Nome do filme"  
+            />
+
+            <TouchableOpacity style={styles.button}>
+                <Text style={styles.buttonText}>Adicionar</Text>
             </TouchableOpacity>
         </View>
     );
@@ -23,5 +28,48 @@ export default function Home(){
 
 //Criando os estilos
 const styles = StyleSheet.create({
- 
+   container:{
+    flex: 1,
+    backgroundColor: '#30478C',
+    paddingVertical:70,
+    paddingHorizontal: 20
+   },
+
+   titulo:{
+    fontSize:28,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    color:'#FFD700'
+},
+
+Subtitulo:{
+color: '#FFF',
+fontSize: 15
+},
+
+campo:{
+backgroundColor: '#1F1E25',
+color: '#FFF',
+fontsize: 18,
+marginTop: 30,
+borderRadius: 7,
+padding: 15
+},
+
+greetings: {
+color: '#FFF'
+},
+
+button: {
+backgroundColor: '#A370F7',
+padding: 15,
+borderRadius: 7,
+alignItems: 'center',
+marginTop: 20
+},
+buttonText: {
+color: '#FFF',
+fontSize: 17,
+fontWeight: 'bold',
+},
 });
